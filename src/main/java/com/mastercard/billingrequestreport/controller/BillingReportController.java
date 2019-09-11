@@ -1,6 +1,5 @@
 package com.mastercard.billingrequestreport.controller;
 
-import com.mastercard.billingrequestreport.model.BillingRequestReportModel;
 import com.mastercard.billingrequestreport.model.OfflineRequestDTO;
 import com.mastercard.billingrequestreport.service.BillingReportRequestService;
 import org.springframework.beans.factory.annotation.Autowired;
