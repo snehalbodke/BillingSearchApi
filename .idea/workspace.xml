@@ -2,21 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d670afa-c844-4f86-9f59-64b131ceb4d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mastercard/billingrequestreport/BillingReportControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/controller/BillingReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/controller/BillingReportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BillingReportRequestTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/model/OfflineRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/model/OfflineRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/model/SearchCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/model/SearchCriteria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/repository/BillingReportRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/repository/BillingReportRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/service/BillingReportRequestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/service/BillingReportRequestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mastercard/billingrequestreport/BillingReportControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mastercard/billingrequestreport/BillingReportControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/BillingRequestReport.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mastercard/billingrequestreport/controller/BillingReportController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mastercard/billingrequestreport/controller/BillingReportController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BillingReportRequestTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mastercard/billingrequestreport/model/OfflineRequestDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mastercard/billingrequestreport/model/OfflineRequestDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mastercard/billingrequestreport/model/SearchCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mastercard/billingrequestreport/model/SearchCriteria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mastercard/billingrequestreport/repository/BillingReportRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mastercard/billingrequestreport/repository/BillingReportRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mastercard/billingrequestreport/service/BillingReportRequestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mastercard/billingrequestreport/service/BillingReportRequestService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/BillingRequestReport.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mastercard/billingrequestreport/BillingReportControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mastercard/billingrequestreport/BillingReportControllerTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="213" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -69,7 +78,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BillingReportControllerTest.GetBillingReportRequestDetails_When_ValidRequest">
+  <component name="RunManager" selected="JUnit.BillingReportControllerTest.BillingReportGetTestSuccess">
     <configuration name="BillingRequestReportApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mastercard.billingrequestreport.BillingRequestReportApplication" />
       <module name="BillingRequestReport" />
@@ -105,6 +114,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BillingReportControllerTest.BillingReportGetTestSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BillingRequestReport" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mastercard.billingrequestreport.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mastercard.billingrequestreport" />
+      <option name="MAIN_CLASS_NAME" value="com.mastercard.billingrequestreport.BillingReportControllerTest" />
+      <option name="METHOD_NAME" value="BillingReportGetTestSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BillingReportControllerTest.BillingReportGetTestSuccess_withValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BillingRequestReport" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mastercard.billingrequestreport.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mastercard.billingrequestreport" />
+      <option name="MAIN_CLASS_NAME" value="com.mastercard.billingrequestreport.BillingReportControllerTest" />
+      <option name="METHOD_NAME" value="BillingReportGetTestSuccess_withValues" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BillingReportControllerTest.GetBillingReportRequestDetails_When_ValidRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BillingRequestReport" />
       <extension name="coverage">
@@ -116,16 +157,6 @@
       <option name="PACKAGE_NAME" value="com.mastercard.billingrequestreport" />
       <option name="MAIN_CLASS_NAME" value="com.mastercard.billingrequestreport.BillingReportControllerTest" />
       <option name="METHOD_NAME" value="GetBillingReportRequestDetails_When_ValidRequest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BillingReportControllerTest.testGetEmployeeListSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BillingRequestReport" />
-      <option name="PACKAGE_NAME" value="com.mastercard.billingrequestreport" />
-      <option name="MAIN_CLASS_NAME" value="com.mastercard.billingrequestreport.BillingReportControllerTest" />
-      <option name="METHOD_NAME" value="testGetEmployeeListSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,29 +178,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringBootDemoApplicationTests.testGetEmployeeListSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springbootdemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.howtodoinjava.rest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.howtodoinjava.rest" />
-      <option name="MAIN_CLASS_NAME" value="com.howtodoinjava.rest.SpringBootDemoApplicationTests" />
-      <option name="METHOD_NAME" value="testGetEmployeeListSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BillingReportControllerTest.BillingReportGetTestSuccess" />
+        <item itemvalue="JUnit.BillingReportControllerTest.BillingReportGetTestSuccess_withValues" />
+        <item itemvalue="JUnit.BillingReportControllerTest" />
         <item itemvalue="JUnit.BillingReportControllerTest.GetBillingReportRequestDetails_When_ValidRequest" />
         <item itemvalue="JUnit.BillingReportControllerTest.verifyBillingReportPostTest" />
-        <item itemvalue="JUnit.BillingReportControllerTest.testGetEmployeeListSuccess" />
-        <item itemvalue="JUnit.BillingReportControllerTest" />
-        <item itemvalue="JUnit.SpringBootDemoApplicationTests.testGetEmployeeListSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -204,75 +219,95 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/controller/BillingReportController.java</url>
-          <line>21</line>
+          <line>22</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/controller/BillingReportController.java</url>
-          <line>26</line>
+          <line>27</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/mastercard/billingrequestreport/BillingReportControllerTest.java</url>
-          <line>34</line>
+          <line>231</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/mastercard/billingrequestreport/BillingReportControllerTest.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/mastercard/billingrequestreport/BillingReportControllerTest.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/mastercard/billingrequestreport/BillingReportControllerTest.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/mastercard/billingrequestreport/BillingReportControllerTest.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/repository/BillingReportRepository.java</url>
-          <line>43</line>
+          <line>59</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/repository/BillingReportRepository.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/mastercard/billingrequestreport/BillingReportControllerTest.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/mastercard/billingrequestreport/BillingReportControllerTest.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/controller/BillingReportController.java</url>
           <line>46</line>
-          <option name="timeStamp" value="22" />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/service/BillingReportRequestService.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/mastercard/billingrequestreport/BillingReportControllerTest.java</url>
+          <line>125</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/repository/BillingReportRepository.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="24" />
+          <line>33</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/controller/BillingReportController.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/repository/BillingReportRepository.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/repository/BillingReportRepository.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/repository/BillingReportRepository.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/controller/BillingReportController.java</url>
-          <line>18</line>
+          <line>19</line>
           <properties class="com.mastercard.billingrequestreport.controller.BillingReportController" method="requestReport">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/com/mastercard/billingrequestreport/BillingReportControllerTest.java</url>
-          <line>38</line>
-          <properties class="com.mastercard.billingrequestreport.BillingReportControllerTest" method="verifyBillingReportPostTest">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/BillingRequestReport$BillingReportRequestTest.ic" NAME="BillingReportRequestTest Coverage Results" MODIFIED="1568175682657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/BillingRequestReport$BillingReportControllerTest_BillingReportGetTestSuccess.ic" NAME="BillingReportControllerTest.BillingReportGetTestSuccess Coverage Results" MODIFIED="1568799713214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.mastercard.billingrequestreport.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/BillingRequestReport$SpringBootDemoApplicationTests_testGetEmployeeListSuccess.ic" NAME="SpringBootDemoApplicationTests.testGetEmployeeListSuccess Coverage Results" MODIFIED="1568176108359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.howtodoinjava.rest.*</FILTER>
     </SUITE>

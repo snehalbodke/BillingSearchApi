@@ -5,6 +5,8 @@ import com.mastercard.billingrequestreport.repository.BillingReportRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.sql.SQLException;
+
 @Service
 public class BillingReportRequestService {
 
@@ -37,7 +39,7 @@ BillingReportRepository billingReportRepository;
 
     }*/
 
-public OfflineRequestDTO getReportRequestDetailsById (String requestId){
+public OfflineRequestDTO getReportRequestDetailsById (String requestId) throws SQLException {
    return  billingReportRepository.findByRequestId(requestId);
 }
 }

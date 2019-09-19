@@ -1,10 +1,16 @@
 package com.mastercard.billingrequestreport.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 
+
+//(SerializationFeature.FAIL_ON_EMPTY_BEANS)
 public class OfflineRequestDTO {
 
     @NotNull
@@ -16,6 +22,23 @@ public class OfflineRequestDTO {
     private String invoiceDate;*/
 
     private SearchCriteria searchCriteria;
+
+    public OfflineRequestDTO() {
+    }
+
+
+    public OfflineRequestDTO(@NotNull String feederType, @NotNull String reportType, SearchCriteria searchCriteria, String requestId, String userId, String createdIimestamp, String lastUpdatedTimestamp, String status, String path, String isDeleted) {
+        this.feederType = feederType;
+        this.reportType = reportType;
+        this.searchCriteria = searchCriteria;
+        this.requestId = requestId;
+        this.userId = userId;
+        this.createdIimestamp = createdIimestamp;
+        this.lastUpdatedTimestamp = lastUpdatedTimestamp;
+        this.status = status;
+        this.path = path;
+        this.isDeleted = isDeleted;
+    }
 
     private String requestId;
     private String userId;

@@ -1,12 +1,14 @@
 package com.mastercard.billingrequestreport.repository;
 
-import com.mastercard.billingrequestreport.model.BillingRequestReportModel;
 import com.mastercard.billingrequestreport.model.OfflineRequestDTO;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -26,11 +28,25 @@ public class BillingReportRepository {
                 });
     }
 
-    public OfflineRequestDTO findByRequestId(String id) {
+    public OfflineRequestDTO findByRequestId(String id) throws SQLException {
+       // OfflineRequestDTO offlineRequestDTO = new OfflineRequestDTO();
+        try {
+            String sql = "SELECT * FROM OFFLINE_REQUESTS WHERE REQUEST_ID = ?";
+            OfflineRequestDTO offlineRequestDTO = jdbcTemplate.queryForObject(sql, new Object[]{id}, new RowMapper<OfflineRequestDTO>() {
+                @Override
+                public OfflineRequestDTO mapRow(ResultSet resultSet, int i) throws SQLException {
+                    OfflineRequestDTO offlineRequestDTO = new OfflineRequestDTO();
+                    offlineRequestDTO.setStatus(resultSet.getString("STATUS"));
+                    offlineRequestDTO.setUserId(resultSet.getString("USER_ID"));
 
-        String sql = "SELECT * FROM OFFLINE_REQUESTS WHERE REQUEST_ID = ?";
-
-        return (OfflineRequestDTO) jdbcTemplate.queryForObject(sql, new Object[]{id},new BeanPropertyRowMapper(OfflineRequestDTO.class));
+                    return offlineRequestDTO;
+                }
+            });
+            return offlineRequestDTO;
+        }catch (EmptyResultDataAccessException e) {
+            return null;
+        }
+        //return (OfflineRequestDTO) jdbcTemplate.queryForObject(sql, new Object[]{id},new BeanPropertyRowMapper(OfflineRequestDTO.class));
 
     }
 

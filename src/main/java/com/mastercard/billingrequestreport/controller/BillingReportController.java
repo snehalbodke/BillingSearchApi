@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.sql.SQLException;
 
 @RestController
 @RequestMapping(path = "/billing/requests")
@@ -42,8 +43,7 @@ public class BillingReportController {
     }*/
 
     @GetMapping("/{RequestId}")
-    public ResponseEntity<OfflineRequestDTO> getReportRequestDetailsById(@PathVariable(value = "RequestId") String requestId)
-             {
+    public ResponseEntity<OfflineRequestDTO> getReportRequestDetailsById(@PathVariable(value = "RequestId") String requestId) throws SQLException {
         OfflineRequestDTO offlineRequestDTO = billingReportRequestService.getReportRequestDetailsById(requestId);
                /* userRepository
                         .findById(userId)
