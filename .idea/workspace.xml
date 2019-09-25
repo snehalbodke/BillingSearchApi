@@ -2,21 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d670afa-c844-4f86-9f59-64b131ceb4d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/model/OfflineDetailsResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/model/OfflineRequestCreate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/model/OfflineRequestCreateResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/model/OfflineRequestDTO_copy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/controller/BillingReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/controller/BillingReportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/repository/BillingReportRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/repository/BillingReportRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/model/BillingRequestReportModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/model/BillingRequestReportModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/model/OfflineRequestCreateResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/model/OfflineRequestCreateResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/service/BillingReportRequestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/service/BillingReportRequestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mastercard/billingrequestreport/BillingReportControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mastercard/billingrequestreport/BillingReportControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mastercard/billingrequestreport/controller/BillingReportController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mastercard/billingrequestreport/controller/BillingReportController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mastercard/billingrequestreport/repository/BillingReportRepository$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mastercard/billingrequestreport/model/BillingRequestReportModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mastercard/billingrequestreport/model/BillingRequestReportModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mastercard/billingrequestreport/model/OfflineRequestCreateResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mastercard/billingrequestreport/model/OfflineRequestCreateResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mastercard/billingrequestreport/model/OfflineRequestDetails.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mastercard/billingrequestreport/repository/BillingReportRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mastercard/billingrequestreport/repository/BillingReportRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mastercard/billingrequestreport/service/BillingReportRequestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mastercard/billingrequestreport/service/BillingReportRequestService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mastercard/billingrequestreport/BillingReportControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mastercard/billingrequestreport/BillingReportControllerTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -245,7 +241,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/service/BillingReportRequestService.java</url>
-          <line>29</line>
+          <line>31</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -255,7 +251,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/controller/BillingReportController.java</url>
-          <line>36</line>
+          <line>39</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -270,13 +266,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/controller/BillingReportController.java</url>
-          <line>25</line>
+          <line>26</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/service/BillingReportRequestService.java</url>
-          <line>17</line>
+          <line>19</line>
           <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/service/BillingReportRequestService.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/service/BillingReportRequestService.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mastercard/billingrequestreport/controller/BillingReportController.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

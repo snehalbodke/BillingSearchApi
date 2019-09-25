@@ -2,6 +2,7 @@ package com.mastercard.billingrequestreport.controller;
 
 import com.mastercard.billingrequestreport.model.OfflineDetailsResponse;
 import com.mastercard.billingrequestreport.model.OfflineRequestCreate;
+import com.mastercard.billingrequestreport.model.OfflineRequestCreateResponse;
 import com.mastercard.billingrequestreport.service.BillingReportRequestService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,14 +22,16 @@ public class BillingReportController {
 
     @PostMapping
     @ApiOperation("Returns Request Id and message post submittting the request for offline processing.")
-    public ResponseEntity<String> requestReport(@RequestBody @Valid OfflineRequestCreate offlineRequestCreate) {
+    public ResponseEntity<OfflineRequestCreateResponse> requestReport(@RequestBody @Valid OfflineRequestCreate offlineRequestCreate) {
 
         offlineRequestCreate.setUserId("SN20098787");//need to fetch it from SAML token
         offlineRequestCreate.setPath("http://www.google.com");//temp
         offlineRequestCreate.setStatus("INITIATED");//temp
 
         OfflineRequestCreate.inpReportType.valueOf(offlineRequestCreate.getReportType());
-        return new ResponseEntity<String>(billingReportRequestService.sendBillingReportRequest(offlineRequestCreate), HttpStatus.CREATED);
+       return new ResponseEntity<OfflineRequestCreateResponse>(billingReportRequestService.sendBillingReportRequest(offlineRequestCreate), HttpStatus.CREATED);
+
+       // return ResponseEntity.status(HttpStatus.CREATED).body(billingReportRequestService.sendBillingReportRequest(offlineRequestCreate));
     }
 
     @ApiOperation("Returns Offline request details for {request-id} .")
